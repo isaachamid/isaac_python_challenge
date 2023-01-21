@@ -1,3 +1,8 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+def get_device(request):
+    return HttpResponse('Get Device')
+
+def create_device(request):
+    return HttpResponse('Create Device')
