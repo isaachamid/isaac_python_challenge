@@ -3,6 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    path('devices', views.create_device, name='create_device'),
-    path('devices/<int:pk>/', views.get_device, name='get_device'),
+    path('devices', views.CreateDeviceAPIView.as_view(), name='create_device'),
+    path('devices/<pk>/', views.GetDeviceAPIView.as_view(), name='get_device'),
 ]
