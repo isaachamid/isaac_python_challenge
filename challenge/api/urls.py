@@ -1,8 +1,7 @@
 from django.urls import path
 from . import views
 
-
 urlpatterns = [
-    path('devices', views.CreateDeviceAPIView.as_view(), name='create_device'),
-    path('devices/<pk>/', views.GetDeviceAPIView.as_view(), name='get_device'),
+    path('devices/', views.DynamoRequest.as_view(), name='create_device'),
+    path('devices/id<pk>/', views.DynamoDetailRequest.as_view(), name='get_device'),
 ]
