@@ -27,7 +27,7 @@ rename .env.example file to .env file and put your AWS credentials
 
 ### 3. install requerments.txt
 ```bash
-python -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 ```
 ```bash
